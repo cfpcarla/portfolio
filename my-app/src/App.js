@@ -4,11 +4,11 @@ import { theme } from "./styles/theme";
 import { Box, ThemeProvider } from "@material-ui/core";
 import Navigation from "./components/Navigation";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Post from "./components/Post";
 import Home from "./components/home";
-import Service from "./components/Service";
+import Project from "./components/Project";
 
-import { HOME, ABOUT, CONTACT, SERVICE } from "./controller/nav-controller";
+import { HOME, ABOUT, POST, PROJECT } from "./controller/nav-controller";
 import Footer from "./components/footer";
 
 function App() {
@@ -24,11 +24,11 @@ function App() {
         <Box display={display === ABOUT ? "block" : "none"}>
           <About />
         </Box>
-        <Box display={display === CONTACT ? "block" : "none"}>
-          <Contact />
+        <Box display={display === POST ? "block" : "none"}>
+          <Post />
         </Box>
-        <Box display={display === SERVICE ? "block" : "none"}>
-          <Service />
+        <Box display={display === PROJECT ? "block" : "none"}>
+          <Project />
         </Box>
       </div>
       <Footer setDisplay={setDisplay} />

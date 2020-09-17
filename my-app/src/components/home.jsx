@@ -9,7 +9,7 @@ import {
   Box,
   Link,
 } from "@material-ui/core";
-import { ABOUT, SERVICE } from "../controller/nav-controller";
+import { ABOUT, PROJECT } from "../controller/nav-controller";
 
 const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
@@ -34,8 +34,6 @@ const homeStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
   },
   imgBrand: {
-    width: "1280px",
-    height: "2000px",
     objectFit: "contain",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
@@ -46,10 +44,6 @@ const homeStyles = makeStyles((theme) => ({
   },
 
   resourcesListContainer: {
-    // background:
-    //   "linear-gradient(248.24deg, rgba(0, 0, 0, 0.473434) 0.31%, rgba(0, 0, 0, 0.441699) 20.56%, rgba(0, 0, 0, 0.437494) 77.15%, rgba(0, 0, 0, 0.447353) 99.8%, rgba(10, 10, 10, 0) 99.96%, rgba(126, 126, 126, 0) 99.97%, rgba(0, 0, 0, 0.5) 99.98%), url(" +
-    //   SubwayLine +
-    //   ")",
     width: "100vw",
     height: "75vh",
     backgroundRepeat: "repeat",
@@ -354,11 +348,11 @@ const Home = (props) => {
               </Button>
               <Button
                 className={classes.btnCont}
-                onClick={() => setParentDisplay(SERVICE)}
+                onClick={() => setParentDisplay(PROJECT)}
                 variant="contained"
                 color="primary"
               >
-                Explore services
+                Explore Project
               </Button>
             </Grid>
           </Grid>

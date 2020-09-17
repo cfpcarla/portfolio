@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles, Grid, Typography, Box, Link } from "@material-ui/core";
-// import { ReactComponent as Owl } from "../assets/svg/owl.svg";
-// import Chalkboard from "../assets/photo/chalkboard.jpg";
-import { CONTACT } from "../controller/nav-controller";
+import { POST } from "../controller/nav-controller";
 const footerStyle = makeStyles((theme) => ({
   root: {},
 
@@ -21,11 +19,6 @@ const footerStyle = makeStyles((theme) => ({
     borderRight: "solid white 2px",
   },
   footerContentContainer: {
-    // background:
-    //   "linear-gradient(248.24deg, rgba(0, 0, 0, 0.473434) 0.31%, rgba(0, 0, 0, 0.441699) 20.56%, rgba(0, 0, 0, 0.437494) 77.15%, rgba(0, 0, 0, 0.447353) 99.8%, rgba(10, 10, 10, 0) 99.96%, rgba(126, 126, 126, 0) 99.97%, rgba(0, 0, 0, 0.5) 99.98%), url(" +
-    //   Chalkboard +
-    //   ")",
-
     backgroundRepeat: "repeat",
     display: "flex",
     height: "auto",
@@ -96,10 +89,7 @@ const Footer = (props) => {
               </Typography>
               <Typography variant="h5">(647)-465-1767</Typography>
               <Typography variant="h5">
-                <Link
-                  color="secondary"
-                  onClick={() => setParentDisplay(CONTACT)}
-                >
+                <Link color="secondary" onClick={() => setParentDisplay(POST)}>
                   or Contact us
                 </Link>
               </Typography>

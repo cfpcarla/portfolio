@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-// import { ReactComponent as Owl } from "../assets/svg/owl.svg";
-// import MenuIcon from "@material-ui/icons/Menu";
-// import IconButton from "@material-ui/core/IconButton";
-// import HomeIcon from "@material-ui/icons/Home";
-// import InfoIcon from "@material-ui/icons/Info";
-// import ContactSupportIcon from "@material-ui/icons/ContactSupport";
-// import GradeIcon from "@material-ui/icons/Grade";
 import logo from "../assets/logo.png";
 import {
   Box,
@@ -22,7 +15,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 
-import { HOME, ABOUT, CONTACT, SERVICE } from "../controller/nav-controller";
+import { HOME, ABOUT, POST, PROJECT } from "../controller/nav-controller";
 
 //navigation button
 const HeaderItem = ({ title, actionFn }) => {
@@ -64,6 +57,10 @@ const navStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
     justifyContent: "space-between",
   },
+  headerhome: {
+    color: "#ffe9ef",
+    marginLeft: "2vw",
+  },
 }));
 
 const Navigation = (props) => {
@@ -99,29 +96,30 @@ const Navigation = (props) => {
                 md={3}
               >
                 <Typography
-                  variant="sacramento"
-                  style={{ color: "black", marginLeft: "2vw" }}
+                  variant="h3"
+                  style={{ color: "#ffe9ef", marginLeft: "2vw" }}
                 >
-                  Carla Medeiros
+                  Cá
                 </Typography>
               </Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>
                 <Box className={classes.rightHeaderMenu}>
                   <HeaderItem
                     title="Home"
+                    className={classes.headerhome}
                     actionFn={() => setParentDisplay(HOME)}
                   />
                   <HeaderItem
-                    title="About Us"
+                    title="About Me"
                     actionFn={() => setParentDisplay(ABOUT)}
                   />
                   <HeaderItem
-                    title="Service"
-                    actionFn={() => setParentDisplay(SERVICE)}
+                    title="Projects"
+                    actionFn={() => setParentDisplay(PROJECT)}
                   />
                   <HeaderItem
-                    title="Contact Us"
-                    actionFn={() => setParentDisplay(CONTACT)}
+                    title="Posts"
+                    actionFn={() => setParentDisplay(POST)}
                   />
                 </Box>
               </Grid>

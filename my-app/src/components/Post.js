@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Contact = () => {
+const Post = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -171,4 +171,4 @@ const Contact = () => {
     </Grid>
   );
 };
-export default Contact;
+export default Post;

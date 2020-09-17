@@ -74,7 +74,7 @@ const serviceStyle = makeStyles((theme) => ({
   },
 }));
 
-const Service = () => {
+const Project = () => {
   const classes = serviceStyle();
 
   return (
@@ -168,4 +168,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Project;
