@@ -16,10 +16,8 @@ import {
 // import DeveloperCard from "./side-components/developer-card";
 const AboutStyle = makeStyles((theme) => ({
   missionStatement: {
-    marginTop: "2vh",
-    marginBottom: "2vh",
     display: "flex",
-
+    background: "#ffe9ef",
     justifyContent: "center",
     alignItems: "center",
     height: "auto",

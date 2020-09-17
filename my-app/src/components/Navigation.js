@@ -56,6 +56,7 @@ const navStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     marginTop: theme.spacing(3),
     justifyContent: "space-between",
+    textColor: "#ffe9ef",
   },
   headerhome: {
     color: "#ffe9ef",
