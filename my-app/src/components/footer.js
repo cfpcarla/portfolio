@@ -8,7 +8,7 @@ const footerStyle = makeStyles((theme) => ({
     flexWrap: "wrap",
     marginTop: "",
     marginLeft: "0",
-    color: "white",
+    color: "#ffe9ef",
     background: "#624a59",
   },
   footerHeader: {
@@ -16,7 +16,6 @@ const footerStyle = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     marginBottom: "2vh",
-    borderRight: "solid white 2px",
   },
   footerContentContainer: {
     display: "flex",
