@@ -39,7 +39,7 @@ const navStyles = makeStyles((theme) => ({
     },
   },
   appBar: {
-    backgroundColor: "#624a59",
+    backgroundColor: "#b7e4c7",
     padding: "2vh 0 2vh 0.5vw",
   },
   logo: {
@@ -57,10 +57,9 @@ const navStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     marginTop: theme.spacing(3),
     justifyContent: "space-between",
-    textColor: "#ffe9ef",
+    fontWeight: "bold",
   },
   headerhome: {
-    color: "#ffe9ef",
     marginLeft: "2vw",
   },
   box: {
@@ -100,14 +99,12 @@ const Navigation = (props) => {
                 sm={12}
                 md={3}
               >
-                {/* <img className={classes.imgBrand} alt="ca" src={ca2} /> */}
-
-                <Typography
+                {/* <Typography
                   variant="h3"
-                  style={{ color: "#ffe9ef", marginLeft: "2vw" }}
+                  style={{ color: "black", marginLeft: "2vw" }}
                 >
                   Cá.
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>
                 <Box className={classes.rightHeaderMenu}>

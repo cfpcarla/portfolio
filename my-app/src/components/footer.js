@@ -11,8 +11,7 @@ const footerStyle = makeStyles((theme) => ({
     flexWrap: "wrap",
     marginTop: "",
     marginLeft: "0",
-    color: "#ffe9ef",
-    background: "#624a59",
+    background: "#b7e4c7",
   },
   footerHeader: {
     display: "flex",
@@ -28,7 +27,7 @@ const footerStyle = makeStyles((theme) => ({
     justifyContent: "space-around",
     paddingTop: "2vh",
     paddingBottom: "4vh",
-    background: "#624a59",
+    background: "#b7e4c7",
   },
   footerContent: {
     width: "70vw",
@@ -50,24 +49,23 @@ const Footer = (props) => {
             <Grid container className={classes.footerContent}>
               <Typography
                 variant="h4"
-                style={{ fontWeight: "bold", color: "#ffe9ef" }}
+                style={{ fontWeight: "bold", color: "black" }}
               >
                 Follow Me
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef">
+                <Link color="black">
                   <GitHubIcon />
                 </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef">
+                <Link color="black">
                   <LinkedInIcon />
                 </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef">
-                  {" "}
-                  <InstagramIcon />{" "}
+                <Link color="black">
+                  <InstagramIcon />
                 </Link>
               </Typography>
             </Grid>

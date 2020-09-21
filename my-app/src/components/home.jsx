@@ -19,7 +19,7 @@ const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
   proposition: {
     height: "70vh",
-    background: "#624a59",
+    background: "#b7e4c7",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "40% 50%",
@@ -113,7 +113,7 @@ const homeStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     marginTop: "5rem",
-    background: "#624a59",
+    background: "#b7e4c7",
   },
   logo: {
     display: "flex",
