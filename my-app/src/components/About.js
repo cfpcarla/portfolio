@@ -2,6 +2,7 @@ import React from "react";
 // import ThanhQuan from "../assets/photo/ThanhQuan.JPG";
 // import CarlaMedeiros from "../assets/photo/CarlaMedeiros.JPG";
 import about from "../assets/about.png";
+import carla from "../assets/carla.jpg";
 
 import {
   Box,
@@ -57,13 +58,17 @@ const About = () => {
             About Me
           </Typography>
         </Grid>
-        <Grid>
+        <Box>
           <Card className={classes.root}>
             <CardActionArea>
-              <CardMedia className={classes.media} image={about} />
+              <CardMedia
+                className={classes.media}
+                image="../assets/carla.jpg"
+                title="Carla"
+              />
             </CardActionArea>
           </Card>
-        </Grid>
+        </Box>
         <Grid>
           <Typography
             variant="p"

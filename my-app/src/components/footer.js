@@ -1,5 +1,8 @@
 import React from "react";
 import { makeStyles, Grid, Typography, Box, Link } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
 const footerStyle = makeStyles((theme) => ({
   root: {},
 
@@ -52,13 +55,20 @@ const Footer = (props) => {
                 Follow Me
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef"> Github </Link>
+                <Link color="#ffe9ef">
+                  <GitHubIcon />
+                </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef"> LinkedIn </Link>
+                <Link color="#ffe9ef">
+                  <LinkedInIcon />
+                </Link>
               </Typography>
               <Typography variant="h5">
-                <Link color="#ffe9ef"> Instagram </Link>
+                <Link color="#ffe9ef">
+                  {" "}
+                  <InstagramIcon />{" "}
+                </Link>
               </Typography>
             </Grid>
           </Grid>

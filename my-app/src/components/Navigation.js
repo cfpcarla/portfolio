@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import ca2 from "../assets/ca2.png";
 import {
   Box,
   Button,
@@ -62,6 +63,9 @@ const navStyles = makeStyles((theme) => ({
     color: "#ffe9ef",
     marginLeft: "2vw",
   },
+  box: {
+    height: "40px",
+  },
 }));
 
 const Navigation = (props) => {
@@ -96,11 +100,13 @@ const Navigation = (props) => {
                 sm={12}
                 md={3}
               >
+                {/* <img className={classes.imgBrand} alt="ca" src={ca2} /> */}
+
                 <Typography
                   variant="h3"
                   style={{ color: "#ffe9ef", marginLeft: "2vw" }}
                 >
-                  Cá
+                  Cá.
                 </Typography>
               </Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>
