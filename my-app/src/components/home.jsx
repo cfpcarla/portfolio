@@ -18,7 +18,6 @@ import { ABOUT, PROJECT } from "../controller/nav-controller";
 const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
   proposition: {
-    height: "70vh",
     background: "#b7e4c7",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -153,104 +152,6 @@ const Home = (props) => {
             <Box className={classes.box}>
               <img className={classes.imgBrand} alt="logo" src={logo} />
             </Box>
-            <Button
-              style={{ marginTop: "2rem", fontSize: "1.5rem" }}
-              variant="contained"
-            >
-              See my Work
-            </Button>
-          </Grid>
-        </Grid>
-
-        {/* About Me */}
-        <Grid>
-          <Box xs={12} display="flex" flexWrap="wrap">
-            <Grid
-              item
-              xs={12}
-              lg={6}
-              md={6}
-              style={{ margin: "2rem auto 2rem auto", paddingLeft: "1rem" }}
-            >
-              <Typography variant="h2">About Me</Typography>
-              <Typography variant="h4" style={{ marginTop: "2rem" }}>
-                My name is Carla. I am from Brazil but currently I live in
-                Toronto Canada, I am married, I have 2 cats, I love swimming,
-                cycling and going out with my friends.
-              </Typography>
-              <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-                I had previous background in Law which gave me a lot of
-                experience in different types of companies, which allowed me to
-                understand the complexity and dynamics of the corporate
-                environment, develop soft skills and generate results for the
-                teams in which I participated.
-              </Typography>
-              <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-                When me and my husband decided to come to Canada I decided to
-                change my career and do something that I love and make me happy.
-                That was when I decided to become a software developer. I took
-                some online JavaScript courses, and soon after that I did a
-                full-time Bootcamp at Lighthouse Labs in web development ​in
-                which I gained a lot of experience​.
-              </Typography>
-              <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-                After that, I did several projects, participated in volunteer
-                work, and now I just finished the Prepr FUN program. I'm curious
-                and passionate about programming and solving real problems. I'm
-                always looking for new knowledge and challenges.
-              </Typography>
-              <Button variant="contained" color="primary">
-                Download my resume
-              </Button>
-              <Box>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <CardMedia
-                      className={classes.media}
-                      image="../assets/carla.jpg"
-                      title="Carla"
-                    />
-                  </CardActionArea>
-                </Card>
-              </Box>
-            </Grid>
-          </Box>
-        </Grid>
-
-        {/* My projects */}
-        <Grid item xs={12}>
-          <Typography variant="h4" align="center" style={{ marginTop: "2rem" }}>
-            Provided Features
-          </Typography>
-          <Grid item xs={12} className={classes.featureList}>
-            <CardFeature
-              title="Educational Programs"
-              desc="Our online course selection has been vetted and verified to provide you with the industry’s most renowned learning materials. Our up to date programs are actively implemented and will help to give you a leading edge in your field of interest."
-              btn={true}
-              maxWidth={300}
-              margin="0 auto 0 auto"
-            />
-            <CardFeature
-              title="Job Opportunities"
-              desc="Our in house bulletin boards are made to be the first stop on your employment pursuits. We offer links to job search engines, companies hiring around you, and business postings for both contract and internship availabilities."
-              btn={true}
-              maxWidth={300}
-              margin="0 auto 0 auto"
-            />
-            <CardFeature
-              title="Community Hub"
-              desc="Our community hub is a gateway for teachers, students, businesses, and individuals - All working, learning, and improving as one."
-              btn={true}
-              maxWidth={300}
-              margin="0 auto 0 auto"
-            />
-            <CardFeature
-              title="Hiring Workshop"
-              desc="Job in mind? Strengthen your skills and ace your next job interview with ease!"
-              btn={true}
-              maxWidth={300}
-              margin="0 auto 0 auto"
-            />
           </Grid>
         </Grid>
       </div>

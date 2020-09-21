@@ -22,6 +22,15 @@ const AboutStyle = makeStyles((theme) => ({
     background: "white",
     height: "auto",
   },
+  media: {
+    width: "80%",
+  },
+  imageGrid: {
+    textAlign: "center",
+  },
+  content: {
+    padding: "20px",
+  },
 }));
 
 const About = () => {
@@ -29,7 +38,7 @@ const About = () => {
   return (
     <Box>
       <Grid container className={classes.missionStatement}>
-        <Grid item xs={12} md={6} lg={4}>
+        <Grid item xs={12}>
           <Typography
             variant="h2"
             style={{
@@ -44,21 +53,7 @@ const About = () => {
           </Typography>
         </Grid>
 
-        <Grid>
-          <Box>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="../assets/carla.jpg"
-                  title="Carla"
-                />
-              </CardActionArea>
-            </Card>
-          </Box>
-        </Grid>
-
-        <Grid>
+        <Grid item xs={12} md={8} className={classes.content}>
           <Typography variant="h4" style={{ marginTop: "2rem" }}>
             My name is Carla. I am from Brazil but currently I live in Toronto
             Canada, I am married, I have 2 cats, I love swimming, cycling and
@@ -87,6 +82,22 @@ const About = () => {
           <Button variant="contained" color="primary">
             Download my resume
           </Button>
+        </Grid>
+
+        <Grid item xs={12} md={4} className={classes.imageGrid}>
+          <img src={carla} className={classes.media} />
+          {/* <Box>
+            <Card>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={carla}
+                  title="Carla"
+                />
+                xunda <br></br>
+              </CardActionArea>
+            </Card>
+          </Box> */}
         </Grid>
         <Grid
           item

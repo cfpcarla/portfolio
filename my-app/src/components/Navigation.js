@@ -59,8 +59,8 @@ const navStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     fontWeight: "bold",
   },
-  headerhome: {
-    marginLeft: "2vw",
+  headerItem: {
+    position: "absolute",
   },
   box: {
     height: "40px",
@@ -110,7 +110,7 @@ const Navigation = (props) => {
                 <Box className={classes.rightHeaderMenu}>
                   <HeaderItem
                     title="Home"
-                    className={classes.headerhome}
+                    className={classes.headerItem}
                     actionFn={() => setParentDisplay(HOME)}
                   />
                   <HeaderItem
