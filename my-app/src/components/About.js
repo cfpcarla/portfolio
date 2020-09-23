@@ -19,7 +19,7 @@ import {
 const AboutStyle = makeStyles((theme) => ({
   missionStatement: {
     display: "flex",
-    background: "white",
+    background: "#b7e4c7",
     height: "auto",
   },
   media: {
@@ -44,8 +44,7 @@ const About = () => {
             style={{
               color: "588b8b",
               marginLeft: "2vw",
-              textDecoration: "underline",
-              textAlign: "center",
+              textAlign: "Left",
               background: "f5f3f4",
             }}
           >

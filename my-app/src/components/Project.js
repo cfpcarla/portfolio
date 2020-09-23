@@ -97,23 +97,19 @@ const Project = () => {
               variant="h3"
               style={{ margin: "2vh 0 2vh 0" }}
             >
-              One platform for a library of jobs and educations
+              I am Proficient...
             </Typography>
             <Typography align="center" variant="h4">
-              All feature has their purpose in helping you pursuit your next
-              career
+              in React, Redux, Rest API, NodeJS, Express, Git, Ruby on Rails,
+              Javascript, Clojure, Storybook, Jest, HTML5, CSS and Python.
+              <br></br>I always look forward to finding ways to integrate new
+              tools and languages into my projects. You can take a look at my
+              Github repositories.
             </Typography>
           </Grid>
         </Box>
 
         <Grid>
-          <Button
-            className={classes.btnPrimary}
-            color="primary"
-            variant="contained"
-          >
-            Start now
-          </Button>
           <Button
             className={classes.btnSecondary}
             color="secondary"
@@ -125,39 +121,51 @@ const Project = () => {
         </Grid>
 
         <Grid id="service-header" item xs={12} style={{ marginBottom: "2vh" }}>
-          <Typography variant="h4" align="center" style={{ marginTop: "2rem" }}>
-            Glaukopis provided features
-          </Typography>
           <Grid item xs={12} className={classes.generalFeatureList}>
             <CardFeature
-              title="Educational Programs"
-              desc="Our online course selection has been vetted and verified to provide you with the industry’s most renowned learning materials. Our up to date programs are actively implemented and will help to give you a leading edge in your field of interest."
+              title="Booklist"
+              desc="I developed this project as a platform in which you can search for books and save them to read later.
+              Building a React application with a NodeJS and API back-end. ​Also use Trello to manage and organize better the tasks and VS code to develop the app."
               btn={true}
-              maxWidth={300}
+              maxWidth={600}
               margin="0 auto 0 auto"
               href="#edu-section"
             />
             <CardFeature
-              title="Job Opportunities"
-              desc="Our in house bulletin boards are made to be the first stop on your employment pursuits. We offer links to job search engines, companies hiring around you, and business postings for both contract and internship availabilities."
+              title="Task-Scheduling"
+              desc="I developed this Project and the purpose is a Task Scheduling App for Dispatcher/ Driver.
+              Use React with MaterialUI, also use Trello to manage and organize better the tasks and VS code to develop the app.
+              You can take a look on the website here: ​https://task-scheduling-project.vercel.app/"
               btn={true}
-              maxWidth={300}
+              maxWidth={600}
               margin="0 auto 0 auto"
-              href="#job-section"
+              href="​https://task-scheduling-project.vercel"
             />
             <CardFeature
-              title="Community Hub"
-              desc="Our community hub is a gateway for teachers, students, businesses, and individuals - All working, learning, and improving as one."
+              title="Glaukopis Wisdom"
+              desc="We use React with Material UI, also use Trello to manage and organize better the tasks and VS code to develop the website."
               btn={true}
-              maxWidth={300}
+              maxWidth={600}
               margin="0 auto 0 auto"
-              href="#com-section"
+              href="https://glaukopis-wisdom.vercel.app/"
             />
             <CardFeature
-              title="Professional Workshop"
-              desc="Job in mind? Strengthen your skills and ace your next job interview with ease!"
+              title="CommitED"
+              desc="This app closes the gap by providing a platform to host a network of Service Providers and volunteers who want to give back or fulfill a mandatory commitment.
+              I used NodeJS
+              Express
+              BodyParser
+              Node-fetch
+              Heroku deployment
+              Google maps API
+              React with materialUI
+              Bcrypt
+              Nodemailer
+              PostgreSQL
+              Cors
+              Axios, also use Trello to manage and organize better the tasks and VS code to develop the app "
               btn={true}
-              maxWidth={300}
+              maxWidth={600}
               margin="0 auto 0 auto"
               href="#pro-section"
             />
