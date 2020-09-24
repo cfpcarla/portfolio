@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-// import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-// import { confirmAlert } from "react-confirm-alert"; // Import
-// import "react-confirm-alert/src/react-confirm-alert.css";
-import { Button, Grid, Typography } from "@material-ui/core";
-// import { ReactComponent as ContactUsIllustration } from "../assets/svg/undraw_contact_us_15o2.svg";
-// import { ReactComponent as ConfirmMessageIllustration } from "../assets/svg/undraw_message_sent_1030.svg";
+import { Box, Button, Grid, makeStyles, Typography } from "@material-ui/core";
+import CardFeature from "../side-components/card-features";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,114 +56,146 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const serviceStyle = makeStyles((theme) => ({
+  serviceHeader: {
+    paddingTop: "5vh",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "row",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
+  },
+  serviceHeaderImg: {
+    width: "30vw",
+    height: "50vh",
+    [theme.breakpoints.down("md")]: {
+      width: "40vw",
+      height: "50vh",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "60vw",
+      height: "max-content",
+    },
+  },
+  btnPrimary: {
+    padding: "1.5rem",
+    margin: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      width: "95vw",
+    },
+  },
+  btnSecondary: {
+    padding: "1.5rem",
+    margin: "1rem",
+
+    [theme.breakpoints.down("sm")]: {
+      width: "95vw",
+      background: "black",
+    },
+  },
+  generalFeatureList: {
+    marginTop: "2rem",
+    display: "flex",
+    flexWrap: "wrap",
+    alignSelf: "flex-start",
+  },
+  Container: {
+    display: "flex",
+    paddingBottom: "5vh",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: "10px 10px 0 0",
+  },
+  contentFeatureList: {
+    marginTop: "2rem",
+    display: "flex",
+    flexWrap: "wrap",
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  },
+  Content: {
+    margin: "5vh 2vw 0 2vw",
+  },
+  btnShow: {
+    margin: "5vh 0 0 0",
+    padding: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
+  },
+}));
+
 const Post = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    msg: "",
-    submitted: false,
-  });
-
-  const classes = useStyles();
-
-  const handleChangeName = (event) => {
-    setFormData({ ...formData, name: event.target.value });
-  };
-  const handleChangeEmail = (event) => {
-    setFormData({ ...formData, email: event.target.value });
-  };
-  const handleChangeMsg = (event) => {
-    setFormData({ ...formData, msg: event.target.value });
-  };
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send("gmail", templateId, variables)
-      .then((res) => {
-        console.log("Email successfully sent!");
-      })
-      .catch((err) => console.error("Development Error :", err));
-  };
-  const handleSubmit = (e) => {
-    // confirmAlert({
-    //   message: "Message sent - we will be in contact",
-    //   // childrenElement: () => <ConfirmMessageIllustration className="img" />,
-    //   buttons: [
-    //     {
-    //       label: "OK",
-    //       style: { fontSize: "2rem" },
-    //     },
-    //   ],
-    // });
-    // setFormData({ submitted: true, name: "", email: "", msg: "" });
-    // const templateId = "glaukopis_email";
-    // sendFeedback(templateId, {
-    //   message_html: formData.msg,
-    //   from_email: formData.email,
-    // });
-    // e.preventDefault();
-  };
+  const classes = serviceStyle();
 
   return (
-    <Grid container className={classes.root}>
-      {/* <ContactUsIllustration className={classes.illustration} /> */}
-
-      {/* <ValidatorForm onSubmit={handleSubmit} className={classes.form}>
-        <div className={classes.eduheader}>
-          <Typography color="primary" variant="h3">
-            Contact our team now
-          </Typography>
-          <Typography color="primary" variant="h4">
-            Our team is happy to answer your questions. Fill out the form and
-            we’ll be in touch as soon as possible.
-          </Typography>
-        </div>
-
-        <br />
-        <TextValidator
-          className={classes.input}
-          variant="outlined"
-          label="Name"
-          name="name"
-          value={formData.name}
-          onChange={handleChangeName}
-          validators={["required"]}
-          errorMessages={["Please fill your name"]}
-        />
-        <br />
-        <TextValidator
-          className={classes.input}
-          variant="outlined"
-          label="Email"
-          name="email"
-          value={formData.email}
-          onChange={handleChangeEmail}
-          validators={["required", "isEmail"]}
-          errorMessages={["this field is required", "email is not valid"]}
-        />
-        <br />
-        <TextValidator
-          className={classes.input}
-          variant="outlined"
-          label="Message"
-          multiline
-          rows={10}
-          name="msg"
-          value={formData.msg}
-          onChange={handleChangeMsg}
-          validators={["required"]}
-          errorMessages={["this field is required"]}
-        />
-        <br />
-        <Button
-          className={classes.btnSubmit}
-          color="primary"
-          variant="contained"
-          type="submit"
+    <>
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="left"
+        alignItems="left"
+      >
+        <Box
+          className={classes.serviceHeader}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
         >
-          submit
-        </Button>
-      </ValidatorForm> */}
-    </Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <Typography
+              align="left"
+              variant="h3"
+              style={{ margin: "2vh 0 2vh 0" }}
+            >
+              Here is my posts. Check this out!
+            </Typography>
+          </Grid>
+        </Box>
+
+        <Grid id="service-header" item xs={12} style={{ marginBottom: "2vh" }}>
+          <Grid item xs={12} className={classes.generalFeatureList}>
+            <CardFeature
+              title="What is TDD and its Benefits"
+              desc="TDD (Test-Driven Development) has become a recurring practice among good developers. But to start talking more about TDD we need to understand what exactly TDD is and what it is for. So Let’s go."
+              btn={true}
+              maxWidth={300}
+              margin="0 auto 0 auto"
+              href="#edu-section"
+            />
+            <CardFeature
+              title="Why learn Ruby and Rails?"
+              desc="Ruby And Rails are super famous in the world of developers, many people like others not so much, so I decided to write a little about it."
+              btn={true}
+              maxWidth={300}
+              margin="0 auto 0 auto"
+              href=""
+            />
+            <CardFeature
+              title="Pair Programming: Advantages and disadvantages of Pair Programming"
+              desc="Pair programming is a practice used by teams that adopt Extreme Programming (XP)."
+              btn={true}
+              maxWidth={300}
+              margin="0 auto 0 auto"
+              href=""
+            />
+            <CardFeature
+              title="Introduction to React"
+              desc="React is a JavaScript library that has tools that facilitate the construction of Interfaces on the Web."
+              btn={true}
+              maxWidth={300}
+              margin="0 auto 0 auto"
+              href="#pro-section"
+            />
+          </Grid>
+        </Grid>
+      </Box>
+    </>
   );
 };
 export default Post;
