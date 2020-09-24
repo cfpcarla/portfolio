@@ -2,60 +2,6 @@ import React, { useState } from "react";
 import { Box, Button, Grid, makeStyles, Typography } from "@material-ui/core";
 import CardFeature from "../side-components/card-features";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    marginTop: "5vh",
-    marginBottom: "5vh",
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-  illustration: {
-    width: "45vw",
-    height: "50vh",
-    [theme.breakpoints.down("sm")]: {
-      margin: "auto",
-      width: "95vw",
-      height: "40vh",
-    },
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  input: {
-    width: "40vw",
-    [theme.breakpoints.down("md")]: {
-      width: "50vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "90vw",
-    },
-  },
-  btnSubmit: {
-    width: "40vw",
-    [theme.breakpoints.down("md")]: {
-      width: "50vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "90vw",
-    },
-  },
-  eduheader: {
-    marginTop: "5vh",
-    width: "40vw",
-    [theme.breakpoints.down("md")]: {
-      width: "50vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "90vw",
-    },
-    textAlign: "center",
-  },
-}));
-
 const serviceStyle = makeStyles((theme) => ({
   serviceHeader: {
     paddingTop: "5vh",

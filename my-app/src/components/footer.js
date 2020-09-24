@@ -54,19 +54,22 @@ const Footer = (props) => {
                 Follow Me
               </Typography>
               <Typography variant="h5">
-                <Link color="black">
+                <a href=" https://github.com/cfpcarla" target="_blank">
                   <GitHubIcon />
-                </Link>
+                </a>
               </Typography>
               <Typography variant="h5">
-                <Link color="black">
+                <a
+                  href="https://www.linkedin.com/in/carla-fabricia-medeiros/?locale=en_US"
+                  target="_blank"
+                >
                   <LinkedInIcon />
-                </Link>
+                </a>
               </Typography>
               <Typography variant="h5">
-                <Link color="black">
+                <a href="https://www.instagram.com/cfpcarla/" target="_blank">
                   <InstagramIcon />
-                </Link>
+                </a>
               </Typography>
             </Grid>
           </Grid>
