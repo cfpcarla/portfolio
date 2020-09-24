@@ -101,7 +101,7 @@ const Project = () => {
             >
               I am Proficient...
             </Typography>
-            <Typography align="center" variant="h4">
+            <Typography align="center" variant="h6">
               in React, Redux, Rest API, NodeJS, Express, Git, Ruby on Rails,
               Javascript, Clojure, Storybook, Jest, HTML5, CSS and Python.
               <br></br>I always look forward to finding ways to integrate new
@@ -117,6 +117,7 @@ const Project = () => {
             color="secondary"
             variant="contained"
             href="https://github.com/cfpcarla"
+            target="_blank"
           >
             See all features
           </Button>
@@ -141,6 +142,7 @@ const Project = () => {
               maxWidth={600}
               margin="0 auto 0 auto"
               href="​https://task-scheduling-project-3xlw5vfky.vercel.app/"
+              target="_blank"
             />
             <CardFeature
               title="Glaukopis Wisdom"
@@ -149,6 +151,7 @@ const Project = () => {
               maxWidth={600}
               margin="0 auto 0 auto"
               href="https://glaukopis-wisdom.vercel.app/"
+              target="_blank"
             />
             <CardFeature
               title="CommitED"

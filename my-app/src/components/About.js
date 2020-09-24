@@ -58,11 +58,11 @@ const About = () => {
       <Grid container className={classes.missionStatement}>
         <Grid item xs={12}>
           <Typography
-            variant="h2"
+            variant="h3"
             style={{
               color: "black",
               marginLeft: "2vw",
-              textAlign: "Left",
+              textAlign: "center",
               background: "f5f3f4",
             }}
           >
