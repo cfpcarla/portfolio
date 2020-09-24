@@ -116,7 +116,7 @@ const Project = () => {
             className={classes.btnSecondary}
             color="secondary"
             variant="contained"
-            href="#service-header"
+            href="https://github.com/cfpcarla"
           >
             See all features
           </Button>
@@ -136,12 +136,11 @@ const Project = () => {
             <CardFeature
               title="Task-Scheduling"
               desc="I developed this Project and the purpose is a Task Scheduling App for Dispatcher/ Driver.
-              Use React with MaterialUI, also use Trello to manage and organize better the tasks and VS code to develop the app.
-              You can take a look on the website here: ​https://task-scheduling-project.vercel.app/"
+              Use React with MaterialUI, also use Trello to manage and organize better the tasks and VS code to develop the app."
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"
-              href="​https://task-scheduling-project.vercel"
+              href="​https://task-scheduling-project-3xlw5vfky.vercel.app/"
             />
             <CardFeature
               title="Glaukopis Wisdom"
