@@ -112,7 +112,7 @@ const Post = () => {
               btn={true}
               maxWidth={300}
               margin="0 auto 0 auto"
-              href="#edu-section"
+              href="https://medium.com/@cfpcarla/what-is-tdd-and-its-benefits-81db99b06438"
             />
             <CardFeature
               title="Why learn Ruby and Rails?"
@@ -120,7 +120,7 @@ const Post = () => {
               btn={true}
               maxWidth={300}
               margin="0 auto 0 auto"
-              href=""
+              href="https://medium.com/@cfpcarla/why-learn-ruby-and-rails-3f34f2420132"
             />
             <CardFeature
               title="Pair Programming: Advantages and disadvantages of Pair Programming"
@@ -128,7 +128,7 @@ const Post = () => {
               btn={true}
               maxWidth={300}
               margin="0 auto 0 auto"
-              href=""
+              href="https://medium.com/@cfpcarla/pair-programming-advantages-and-disadvantages-of-pair-programming-1748ed69305"
             />
             <CardFeature
               title="Introduction to React"
