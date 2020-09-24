@@ -14,12 +14,24 @@ import {
   CardMedia,
   Button,
 } from "@material-ui/core";
+import Timeline from "@material-ui/lab/Timeline";
+import TimelineItem from "@material-ui/lab/TimelineItem";
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
+import TimelineConnector from "@material-ui/lab/TimelineConnector";
+import TimelineContent from "@material-ui/lab/TimelineContent";
+import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
+import TimelineDot from "@material-ui/lab/TimelineDot";
+import FastfoodIcon from "@material-ui/icons/Fastfood";
+import LaptopMacIcon from "@material-ui/icons/LaptopMac";
+import HotelIcon from "@material-ui/icons/Hotel";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import Paper from "@material-ui/core/Paper";
 
 // import DeveloperCard from "./side-components/developer-card";
 const AboutStyle = makeStyles((theme) => ({
   missionStatement: {
     display: "flex",
-    background: "#b7e4c7",
+    background: "white",
     height: "auto",
   },
   media: {
@@ -30,6 +42,12 @@ const AboutStyle = makeStyles((theme) => ({
   },
   content: {
     padding: "20px",
+  },
+  paper: {
+    padding: "6px 16px",
+  },
+  secondaryTail: {
+    backgroundColor: theme.palette.secondary.main,
   },
 }));
 
@@ -42,7 +60,7 @@ const About = () => {
           <Typography
             variant="h2"
             style={{
-              color: "588b8b",
+              color: "black",
               marginLeft: "2vw",
               textAlign: "Left",
               background: "f5f3f4",
@@ -53,50 +71,85 @@ const About = () => {
         </Grid>
 
         <Grid item xs={12} md={8} className={classes.content}>
-          <Typography variant="h4" style={{ marginTop: "2rem" }}>
-            My name is Carla. I am from Brazil but currently I live in Toronto
-            Canada, I am married, I have 2 cats, I love swimming, cycling and
-            going out with my friends.
-          </Typography>
-          <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-            I had previous background in Law which gave me a lot of experience
-            in different types of companies, which allowed me to understand the
-            complexity and dynamics of the corporate environment, develop soft
-            skills and generate results for the teams in which I participated.
-          </Typography>
-          <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-            When me and my husband decided to come to Canada I decided to change
-            my career and do something that I love and make me happy. That was
-            when I decided to become a software developer. I took some online
-            JavaScript courses, and soon after that I did a full-time Bootcamp
-            at Lighthouse Labs in web development ​in which I gained a lot of
-            experience​.
-          </Typography>
-          <Typography variant="h4" style={{ margin: "2rem 0 2rem 0" }}>
-            After that, I did several projects, participated in volunteer work,
-            and now I just finished the Prepr FUN program. I'm curious and
-            passionate about programming and solving real problems. I'm always
-            looking for new knowledge and challenges.
-          </Typography>
-          <Button variant="contained" color="primary">
-            Download my resume
-          </Button>
+          <Timeline align="alternate">
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <Typography variant="body2" color="textSecondary">
+                  9:30 am
+                </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot>
+                  <FastfoodIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography variant="h6" component="h1">
+                    Eat
+                  </Typography>
+                  <Typography>Because you need strength</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <Typography variant="body2" color="textSecondary">
+                  10:00 am
+                </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot color="primary">
+                  <LaptopMacIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography variant="h6" component="h1">
+                    Code
+                  </Typography>
+                  <Typography>Because it&apos;s awesome!</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot color="primary" variant="outlined">
+                  <HotelIcon />
+                </TimelineDot>
+                <TimelineConnector className={classes.secondaryTail} />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography variant="h6" component="h1">
+                    Sleep
+                  </Typography>
+                  <Typography>Because you need rest</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot color="secondary">
+                  <RepeatIcon />
+                </TimelineDot>
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography variant="h6" component="h1">
+                    Repeat
+                  </Typography>
+                  <Typography>Because this is the life you love!</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
         </Grid>
 
         <Grid item xs={12} md={4} className={classes.imageGrid}>
           <img src={carla} className={classes.media} />
-          {/* <Box>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={carla}
-                  title="Carla"
-                />
-                xunda <br></br>
-              </CardActionArea>
-            </Card>
-          </Box> */}
         </Grid>
         <Grid
           item

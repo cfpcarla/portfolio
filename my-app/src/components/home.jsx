@@ -18,7 +18,7 @@ import { ABOUT, PROJECT } from "../controller/nav-controller";
 const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
   proposition: {
-    background: "#b7e4c7",
+    background: "#fbeaeb",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "40% 50%",
@@ -112,7 +112,7 @@ const homeStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     marginTop: "5rem",
-    background: "#b7e4c7",
+    background: "#fbeaeb",
   },
   logo: {
     display: "flex",

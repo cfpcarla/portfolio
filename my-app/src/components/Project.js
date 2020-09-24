@@ -35,8 +35,10 @@ const serviceStyle = makeStyles((theme) => ({
   btnSecondary: {
     padding: "1.5rem",
     margin: "1rem",
+
     [theme.breakpoints.down("sm")]: {
       width: "95vw",
+      background: "black",
     },
   },
   generalFeatureList: {
