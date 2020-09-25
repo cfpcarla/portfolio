@@ -4,7 +4,7 @@ import { Box, Button, Grid, makeStyles, Typography } from "@material-ui/core";
 import CardFeature from "../side-components/card-features";
 
 const serviceStyle = makeStyles((theme) => ({
-  serviceHeader: {
+  root: {
     paddingTop: "5vh",
     display: "flex",
     justifyContent: "center",
@@ -13,26 +13,7 @@ const serviceStyle = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
-  serviceHeaderImg: {
-    width: "30vw",
-    height: "50vh",
-    [theme.breakpoints.down("md")]: {
-      width: "40vw",
-      height: "50vh",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "60vw",
-      height: "max-content",
-    },
-  },
-  btnPrimary: {
-    padding: "1.5rem",
-    margin: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      width: "95vw",
-    },
-  },
-  btnSecondary: {
+  btnFeature: {
     padding: "1.5rem",
     margin: "1rem",
 
@@ -41,38 +22,10 @@ const serviceStyle = makeStyles((theme) => ({
       background: "black",
     },
   },
-  generalFeatureList: {
+  cardFeatureProject: {
     marginTop: "2rem",
     display: "flex",
     flexWrap: "wrap",
-  },
-  Container: {
-    display: "flex",
-    paddingBottom: "5vh",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "10px 10px 0 0",
-  },
-  contentFeatureList: {
-    marginTop: "2rem",
-    display: "flex",
-    flexWrap: "wrap",
-
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-  },
-  Content: {
-    margin: "5vh 2vw 0 2vw",
-  },
-  btnShow: {
-    margin: "5vh 0 0 0",
-    padding: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-    },
   },
 }));
 
@@ -88,7 +41,7 @@ const Project = () => {
         alignItems="center"
       >
         <Box
-          className={classes.serviceHeader}
+          className={classes.root}
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -113,7 +66,7 @@ const Project = () => {
 
         <Grid>
           <Button
-            className={classes.btnSecondary}
+            className={classes.btnFeature}
             color="secondary"
             variant="contained"
             href="https://github.com/cfpcarla"
@@ -123,8 +76,13 @@ const Project = () => {
           </Button>
         </Grid>
 
-        <Grid id="service-header" item xs={12} style={{ marginBottom: "2vh" }}>
-          <Grid item xs={12} className={classes.generalFeatureList}>
+        <Grid
+          id="card-feature-projects"
+          item
+          xs={12}
+          style={{ marginBottom: "2vh" }}
+        >
+          <Grid item xs={12} className={classes.cardFeatureProject}>
             <CardFeature
               title="Booklist"
               desc="I developed this project as a platform in which you can search for books and save them to read later.

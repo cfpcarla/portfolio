@@ -29,7 +29,7 @@ import Paper from "@material-ui/core/Paper";
 
 // import DeveloperCard from "./side-components/developer-card";
 const AboutStyle = makeStyles((theme) => ({
-  missionStatement: {
+  root: {
     display: "flex",
     background: "white",
     height: "auto",
@@ -55,7 +55,7 @@ const About = () => {
   const classes = AboutStyle();
   return (
     <Box>
-      <Grid container className={classes.missionStatement}>
+      <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Typography
             variant="h3"

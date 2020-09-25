@@ -68,7 +68,7 @@ const homeStyles = makeStyles((theme) => ({
   },
   resourcesPaper: {
     borderRadius: "5px",
-    backgroundColor: "#ffffffc4",
+    backgroundColor: "#fffafa",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",

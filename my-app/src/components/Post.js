@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Box, Button, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import CardFeature from "../side-components/card-features";
 
 const serviceStyle = makeStyles((theme) => ({
-  serviceHeader: {
+  root: {
     paddingTop: "5vh",
     display: "flex",
     justifyContent: "center",
@@ -12,67 +12,11 @@ const serviceStyle = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
-  serviceHeaderImg: {
-    width: "30vw",
-    height: "50vh",
-    [theme.breakpoints.down("md")]: {
-      width: "40vw",
-      height: "50vh",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "60vw",
-      height: "max-content",
-    },
-  },
-  btnPrimary: {
-    padding: "1.5rem",
-    margin: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      width: "95vw",
-    },
-  },
-  btnSecondary: {
-    padding: "1.5rem",
-    margin: "1rem",
-
-    [theme.breakpoints.down("sm")]: {
-      width: "95vw",
-      background: "black",
-    },
-  },
-  generalFeatureList: {
+  generalCardFeature: {
     marginTop: "2rem",
     display: "flex",
     flexWrap: "wrap",
     alignSelf: "flex-start",
-  },
-  Container: {
-    display: "flex",
-    paddingBottom: "5vh",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "10px 10px 0 0",
-  },
-  contentFeatureList: {
-    marginTop: "2rem",
-    display: "flex",
-    flexWrap: "wrap",
-
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-  },
-  Content: {
-    margin: "5vh 2vw 0 2vw",
-  },
-  btnShow: {
-    margin: "5vh 0 0 0",
-    padding: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-    },
   },
 }));
 
@@ -88,7 +32,7 @@ const Post = () => {
         alignItems="left"
       >
         <Box
-          className={classes.serviceHeader}
+          className={classes.root}
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -104,8 +48,13 @@ const Post = () => {
           </Grid>
         </Box>
 
-        <Grid id="service-header" item xs={12} style={{ marginBottom: "2vh" }}>
-          <Grid item xs={12} className={classes.generalFeatureList}>
+        <Grid
+          id="general-card-feature"
+          item
+          xs={12}
+          style={{ marginBottom: "2vh" }}
+        >
+          <Grid item xs={12} className={classes.generalCardFeature}>
             <CardFeature
               title="What is TDD and its Benefits"
               desc="TDD (Test-Driven Development) has become a recurring practice among good developers. But to start talking more about TDD we need to understand what exactly TDD is and what it is for. So Let’s go."

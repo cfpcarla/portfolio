@@ -98,14 +98,7 @@ const Navigation = (props) => {
                 xs={12}
                 sm={12}
                 md={3}
-              >
-                {/* <Typography
-                  variant="h3"
-                  style={{ color: "black", marginLeft: "2vw" }}
-                >
-                  Cá.
-                </Typography> */}
-              </Grid>
+              ></Grid>
               <Grid className={classes.navContent} item xs={9} sm={12} md={6}>
                 <Box className={classes.rightHeaderMenu}>
                   <HeaderItem
