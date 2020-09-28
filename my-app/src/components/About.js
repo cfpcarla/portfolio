@@ -26,6 +26,7 @@ import LaptopMacIcon from "@material-ui/icons/LaptopMac";
 import HotelIcon from "@material-ui/icons/Hotel";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import Paper from "@material-ui/core/Paper";
+import CodeIcon from "@material-ui/icons/Code";
 
 // import DeveloperCard from "./side-components/developer-card";
 const AboutStyle = makeStyles((theme) => ({
@@ -73,35 +74,27 @@ const About = () => {
         <Grid item xs={12} md={8} className={classes.content}>
           <Timeline align="alternate">
             <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography variant="body2" color="textSecondary">
-                  9:30 am
-                </Typography>
-              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot>
-                  <FastfoodIcon />
+                  <LaptopMacIcon />
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
                   <Typography variant="h6" component="h1">
-                    Eat
+                    Feb/2020
                   </Typography>
-                  <Typography>Because you need strength</Typography>
+                  <Typography>
+                    Finished Bootcamp in web development at Lighthouse Labs
+                  </Typography>
                 </Paper>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography variant="body2" color="textSecondary">
-                  10:00 am
-                </Typography>
-              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="primary">
-                  <LaptopMacIcon />
+                  <CodeIcon />
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
@@ -110,7 +103,10 @@ const About = () => {
                   <Typography variant="h6" component="h1">
                     Code
                   </Typography>
-                  <Typography>Because it&apos;s awesome!</Typography>
+                  <Typography>
+                    I developed the booklist is as a platform in which you can
+                    search for books and save them to read later.
+                  </Typography>
                 </Paper>
               </TimelineContent>
             </TimelineItem>
