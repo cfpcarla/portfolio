@@ -1,6 +1,4 @@
 import React from "react";
-// import ThanhQuan from "../assets/photo/ThanhQuan.JPG";
-// import CarlaMedeiros from "../assets/photo/CarlaMedeiros.JPG";
 import about from "../assets/about.png";
 import carla from "../assets/carla.jpg";
 import SchoolIcon from "@material-ui/icons/School";
@@ -34,7 +32,7 @@ import GavelIcon from "@material-ui/icons/Gavel";
 const AboutStyle = makeStyles((theme) => ({
   root: {
     display: "flex",
-    background: "white",
+    background: "#FEFEFE",
     height: "auto",
   },
   media: {
@@ -61,10 +59,11 @@ const About = () => {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Typography
-            variant="h3"
+            variant="Times New Roman"
+            component="h1"
             style={{
               color: "black",
-              marginLeft: "2vw",
+              marginLeft: "-30vw",
               textAlign: "center",
               background: "f5f3f4",
             }}
@@ -85,7 +84,7 @@ const About = () => {
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
                   <Typography variant="h6" component="h1">
-                    After start my carer in development area
+                    After start my career in development area
                   </Typography>
                   <Typography>
                     Previously, I consolidated my 5 years of experience in law
@@ -154,7 +153,7 @@ const About = () => {
                     I developed a project called booklist where you can search
                     for books and save them for later reading. It was a great
                     way to start putting into practice what I had learned at
-                    Lighthouse
+                    Lighthouse Labs.
                   </Typography>
                 </Paper>
               </TimelineContent>
@@ -247,8 +246,8 @@ const About = () => {
                   <Typography>
                     I continued studying by attending conferences to get
                     inspired, I participated in a mentoring group to continue
-                    growing in the development career that I love so much and I
-                    started developed this portfolio.
+                    growing in the development career that I love and I started
+                    developed this portfolio.
                   </Typography>
                 </Paper>
               </TimelineContent>
@@ -275,13 +274,6 @@ const About = () => {
         <Grid item xs={12} md={4} className={classes.imageGrid}>
           <img src={carla} className={classes.media} />
         </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          lg={6}
-          style={{ marginLeft: "2vw", marginRight: "2vw" }}
-        ></Grid>
       </Grid>
     </Box>
   );

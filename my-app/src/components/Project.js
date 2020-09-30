@@ -49,7 +49,8 @@ const Project = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Typography
               align="center"
-              variant="h3"
+              variant="Times New Roman"
+              component="h1"
               style={{ margin: "2vh 0 2vh 0" }}
             >
               I am Proficient...
@@ -104,7 +105,7 @@ const Project = () => {
             />
             <CardFeature
               title="Glaukopis Wisdom"
-              desc="We use React with Material UI, also use Trello to manage and organize better the tasks and VS code to develop the website."
+              desc=" I developed this Project and the purpose is a library of learning materials, job postings, and dedicated networking communities - All within a single sources! We use React with Material UI, also use Trello to manage and organize better the tasks and VS code to develop the website."
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"
@@ -125,7 +126,7 @@ const Project = () => {
               Nodemailer
               PostgreSQL
               Cors
-              Axios, also use Trello to manage and organize better the tasks and VS code to develop the app "
+              Axios, also use Trello to manage and organize better the tasks and VS code to develop the app."
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"

@@ -40,7 +40,8 @@ const Post = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Typography
               align="left"
-              variant="h3"
+              variant="Times New Roman"
+              component="h1"
               style={{ margin: "2vh 0 2vh 0" }}
             >
               Here is my posts. Check this out!
