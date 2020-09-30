@@ -7,8 +7,15 @@ import About from "./components/About";
 import Post from "./components/Post";
 import Home from "./components/home";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 
-import { HOME, ABOUT, POST, PROJECT } from "./controller/nav-controller";
+import {
+  HOME,
+  ABOUT,
+  POST,
+  PROJECT,
+  CONTACT,
+} from "./controller/nav-controller";
 import Footer from "./components/footer";
 
 function App() {
@@ -29,6 +36,9 @@ function App() {
         </Box>
         <Box display={display === PROJECT ? "block" : "none"}>
           <Project />
+        </Box>
+        <Box display={display === CONTACT ? "block" : "none"}>
+          <Contact />
         </Box>
       </div>
       <Footer setDisplay={setDisplay} />

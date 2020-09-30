@@ -22,8 +22,15 @@ import HomeIcon from "@material-ui/icons/Home";
 import InfoIcon from "@material-ui/icons/Info";
 import CodeIcon from "@material-ui/icons/Code";
 import PostAddIcon from "@material-ui/icons/PostAdd";
+import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 
-import { HOME, ABOUT, POST, PROJECT } from "../controller/nav-controller";
+import {
+  HOME,
+  ABOUT,
+  POST,
+  PROJECT,
+  CONTACT,
+} from "../controller/nav-controller";
 
 //navigation button
 const HeaderItem = ({ title, actionFn }) => {
@@ -120,7 +127,18 @@ const Navigation = (props) => {
             <PostAddIcon />
           </ListItemIcon>
 
-          <HeaderItem title="Posts" actionFn={() => setParentDisplay(POST)} />
+          <HeaderItem title="My Blog" actionFn={() => setParentDisplay(POST)} />
+        </ListItem>
+
+        <ListItem button>
+          <ListItemIcon>
+            <ContactSupportIcon />
+          </ListItemIcon>
+
+          <HeaderItem
+            title="Contact"
+            actionFn={() => setParentDisplay(CONTACT)}
+          />
         </ListItem>
       </List>
     </div>
@@ -167,8 +185,12 @@ const Navigation = (props) => {
                     actionFn={() => setParentDisplay(PROJECT)}
                   />
                   <HeaderItem
-                    title="Posts"
+                    title="Blog"
                     actionFn={() => setParentDisplay(POST)}
+                  />
+                  <HeaderItem
+                    title="Contact"
+                    actionFn={() => setParentDisplay(CONTACT)}
                   />
                 </Box>
               </Grid>
@@ -197,58 +219,5 @@ const Navigation = (props) => {
     </React.Fragment>
   );
 };
-
-//   return (
-//     <React.Fragment>
-//       <div className={classes.root}>
-//         <Grid container justify="space-between">
-//           <Grid className={`${classes.logo} logo-container`} item xs={12}>
-//             <AppBar position="static" className={classes.appBar}>
-//               <Toolbar>
-//                 <Box className={classes.rightHeaderMenu}>
-//                   <HeaderItem
-//                     title="Home"
-//                     className={classes.headerItem}
-//                     actionFn={() => setParentDisplay(HOME)}
-//                   />
-//                   <HeaderItem
-//                     title="About Me"
-//                     actionFn={() => setParentDisplay(ABOUT)}
-//                   />
-//                   <HeaderItem
-//                     title="Projects"
-//                     actionFn={() => setParentDisplay(PROJECT)}
-//                   />
-//                   <HeaderItem
-//                     title="Posts"
-//                     actionFn={() => setParentDisplay(POST)}
-//                   />
-//                 </Box>
-//               </Toolbar>
-//             </AppBar>
-//           </Grid>
-//         </Grid>
-//         <nav>
-//           <Hidden>
-//             <Drawer
-//               container={container}
-//               variant="temporary"
-//               open={mobileOpen}
-//               onClose={handleDrawerToggle}
-//               classes={{
-//                 paper: classes.drawerPaper,
-//               }}
-//               ModalProps={{
-//                 keepMounted: true,
-//               }}
-//             >
-//               {drawer}
-//             </Drawer>
-//           </Hidden>
-//         </nav>
-//       </div>
-//     </React.Fragment>
-//   );
-// };
 
 export default Navigation;

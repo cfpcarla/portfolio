@@ -39,12 +39,21 @@ const Post = () => {
         >
           <Grid item xs={12} md={6} lg={6}>
             <Typography
-              align="left"
+              align="center"
+              variant="h3"
+              component="h1"
+              style={{ margin: "2vh 0 2vh 0" }}
+            >
+              My Blog
+            </Typography>
+            <Typography
+              align="center"
               variant="Times New Roman"
               component="h1"
               style={{ margin: "2vh 0 2vh 0" }}
             >
-              Here is my posts. Check this out!
+              Behind the scenes of products I’ve built, projects I’ve worked on
+              and more.
             </Typography>
           </Grid>
         </Box>
