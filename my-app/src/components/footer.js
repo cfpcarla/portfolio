@@ -45,7 +45,7 @@ const Footer = (props) => {
     <>
       <Box className={classes.footer}>
         <Box xs={12} className={classes.footerContentContainer}>
-          <Grid item md={3} lg={3} xs={12} className={classes.footerHeader}>
+          <Grid item xs={12} className={classes.footerHeader}>
             <Grid container className={classes.footerContent}>
               <Typography
                 variant="h4"

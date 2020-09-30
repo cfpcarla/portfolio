@@ -63,7 +63,7 @@ const About = () => {
             component="h1"
             style={{
               color: "black",
-              marginLeft: "-30vw",
+              marginLeft: "-25vw",
               textAlign: "center",
               background: "f5f3f4",
             }}
