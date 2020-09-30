@@ -60,8 +60,8 @@ const About = () => {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Typography
-            variant="Times New Roman"
-            component="h1"
+            color="primary"
+            variant="h3"
             style={{
               color: "black",
               marginLeft: "-25vw",
@@ -84,7 +84,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     After start my career in development area
                   </Typography>
                   <Typography>
@@ -107,7 +111,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     July/2019
                   </Typography>
                   <Typography>
@@ -128,7 +136,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     Nov-Feb/2020
                   </Typography>
                   <Typography>
@@ -147,7 +159,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     March
                   </Typography>
                   <Typography>
@@ -169,7 +185,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     April
                   </Typography>
                   <Typography>
@@ -192,7 +212,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     May/July
                   </Typography>
                   <Typography>
@@ -215,7 +239,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     August
                   </Typography>
                   <Typography>
@@ -241,7 +269,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     Setember
                   </Typography>
                   <Typography>
@@ -262,7 +294,11 @@ const About = () => {
               </TimelineSeparator>
               <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
-                  <Typography variant="h6" component="h1">
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    style={{ fontWeight: "bold" }}
+                  >
                     October
                   </Typography>
                   <Typography></Typography>

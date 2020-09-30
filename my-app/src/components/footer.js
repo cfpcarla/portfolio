@@ -51,7 +51,7 @@ const Footer = (props) => {
                 variant="h4"
                 style={{ fontWeight: "bold", color: "black" }}
               >
-                Contact to Me
+                Follow Me
               </Typography>
               <Typography variant="h5">
                 <a href=" https://github.com/cfpcarla" target="_blank">

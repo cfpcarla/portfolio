@@ -116,10 +116,10 @@ const Contact = () => {
 
       <ValidatorForm onSubmit={handleSubmit} className={classes.form}>
         <div className={classes.eduheader}>
-          <Typography color="primary" variant="h3">
+          <Typography color="black" variant="h3">
             Contact me
           </Typography>
-          <Typography color="primary" variant="h4">
+          <Typography color="black" variant="h4">
             I will be happy to answer your questions. Fill out the form and I
             will be in touch as soon as possible.
           </Typography>

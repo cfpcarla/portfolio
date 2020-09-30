@@ -41,15 +41,13 @@ const Post = () => {
             <Typography
               align="center"
               variant="h3"
-              component="h1"
               style={{ margin: "2vh 0 2vh 0" }}
             >
               My Blog
             </Typography>
             <Typography
               align="center"
-              variant="Times New Roman"
-              component="h1"
+              variant="h4"
               style={{ margin: "2vh 0 2vh 0" }}
             >
               Behind the scenes of products I’ve built, projects I’ve worked on

@@ -49,8 +49,7 @@ const Project = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Typography
               align="center"
-              variant="Times New Roman"
-              component="h1"
+              variant="h3"
               style={{ margin: "2vh 0 2vh 0" }}
             >
               I am Proficient...
