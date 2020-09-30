@@ -53,7 +53,7 @@ const navStyles = makeStyles((theme) => ({
     },
   },
   appBar: {
-    backgroundColor: "#fbeaeb",
+    backgroundColor: "#f6eeea",
     padding: "2vh 0 2vh 0.5vw",
     justifyContent: "space-between",
     fontWeight: "bold",

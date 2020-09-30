@@ -6,6 +6,7 @@ import "react-confirm-alert/src/react-confirm-alert.css";
 import { Button, Grid, Typography } from "@material-ui/core";
 import { ReactComponent as ContactUsIllustration } from "../assets/undraw_contact_us_15o2.svg";
 import undraw_message_sent_1030 from "../assets/undraw_message_sent_1030.png";
+import contact from "../assets/contact.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -110,12 +111,13 @@ const Contact = () => {
 
   return (
     <Grid container className={classes.root}>
+      {/* <img src={contact} /> */}
       <ContactUsIllustration className={classes.illustration} />
 
       <ValidatorForm onSubmit={handleSubmit} className={classes.form}>
         <div className={classes.eduheader}>
           <Typography color="primary" variant="h3">
-            Contact me now
+            Contact me
           </Typography>
           <Typography color="primary" variant="h4">
             I will be happy to answer your questions. Fill out the form and I
@@ -161,7 +163,7 @@ const Contact = () => {
         <br />
         <Button
           className={classes.btnSubmit}
-          color="primary"
+          color="secondary"
           variant="contained"
           type="submit"
         >

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo4 from "../assets/logo4.png";
 import CardFeature from "../side-components/card-features";
 import carla from "../assets/carla.jpg";
 import {
@@ -18,7 +18,7 @@ import { ABOUT, PROJECT } from "../controller/nav-controller";
 const homeStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
   proposition: {
-    background: "#fbeaeb",
+    background: "#f6eeea",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "40% 50%",
@@ -112,7 +112,7 @@ const homeStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     marginTop: "5rem",
-    background: "#fbeaeb",
+    background: "#f6eeea",
   },
   logo: {
     display: "flex",
@@ -148,7 +148,7 @@ const Home = (props) => {
             }}
           >
             <Box className={classes.box}>
-              <img className={classes.imgBrand} alt="logo" src={logo} />
+              <img className={classes.imgBrand} alt="logo" src={logo4} />
             </Box>
           </Grid>
         </Grid>

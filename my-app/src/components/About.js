@@ -2,6 +2,7 @@ import React from "react";
 import about from "../assets/about.png";
 import carla from "../assets/carla.jpg";
 import SchoolIcon from "@material-ui/icons/School";
+import female_developer from "../assets/female_developer.jpg";
 
 import {
   Box,
@@ -36,7 +37,7 @@ const AboutStyle = makeStyles((theme) => ({
     height: "auto",
   },
   media: {
-    width: "80%",
+    width: "100%",
   },
   imageGrid: {
     textAlign: "center",
@@ -272,7 +273,7 @@ const About = () => {
         </Grid>
 
         <Grid item xs={12} md={4} className={classes.imageGrid}>
-          <img src={carla} className={classes.media} />
+          <img src={female_developer} className={classes.media} />
         </Grid>
       </Grid>
     </Box>
