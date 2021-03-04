@@ -101,7 +101,7 @@ const Contact = () => {
       ],
     });
     setFormData({ submitted: true, name: "", email: "", msg: "" });
-    const templateId = "carla_email";
+    const templateId = "template_q2f8mpz";
     sendFeedback(templateId, {
       message_html: formData.msg,
       from_email: formData.email,

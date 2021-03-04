@@ -96,7 +96,7 @@ const Post = () => {
               btn={true}
               maxWidth={300}
               margin="0 auto 0 auto"
-              href="#pro-section"
+              href="https://medium.com/@cfpcarla/post-1-introduction-to-react-c8282febff9c"
             />
           </Grid>
         </Grid>

@@ -55,8 +55,8 @@ const Project = () => {
               I am Proficient...
             </Typography>
             <Typography align="center" variant="h6">
-              in React, Redux, Rest API, NodeJS, Express, Git, Ruby on Rails,
-              Javascript, Clojure, Storybook, Jest, HTML5, CSS and Python.
+              in React, Redux, Rest API, NodeJS, Express, Git, 
+              Javascript, Storybook, Jest, HTML5, CSS and Python.
               <br></br>I always look forward to finding ways to integrate new
               tools and languages into my projects. You can take a look at my
               Github repositories.
@@ -90,16 +90,16 @@ const Project = () => {
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"
-              href="#edu-section"
+              href="https://github.com/cfpcarla/booklist"
             />
             <CardFeature
-              title="Task-Scheduling"
-              desc="I developed this Project and the purpose is a Task Scheduling App for Dispatcher/ Driver.
-              Use React with MaterialUI, also use Trello to manage and organize better the tasks and VS code to develop the app."
+              title="Exp-Con"
+              desc="I developed this Project and the purpose is a website for interactive concert experience at home.
+              Use HTML,JavaScript, Css and Jquery.I Also use Trello to manage and organize better the tasks and VS code to develop the app."
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"
-              href="​https://task-scheduling-project-3xlw5vfky.vercel.app/"
+              href="​https://exp-con.vercel.app/"
               target="_blank"
             />
             <CardFeature
@@ -125,11 +125,11 @@ const Project = () => {
               Nodemailer
               PostgreSQL
               Cors
-              Axios, also use Trello to manage and organize better the tasks and VS code to develop the app."
+              Axios."
               btn={true}
               maxWidth={600}
               margin="0 auto 0 auto"
-              href="#pro-section"
+              href="https://github.com/cfpcarla/commitED"
             />
           </Grid>
         </Grid>
